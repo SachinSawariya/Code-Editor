@@ -1,0 +1,47 @@
+
+.code-editor-container {
+  display: grid;
+  grid-template-columns: 0fr 3fr 4fr 0fr;
+  position: relative;
+  height: 100vh;
+
+}
+
+.code-display {
+  grid-column: 3/4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 10px;
+  overflow: auto;
+  background-color: #2d2d2d; 
+  color: #ffffff; 
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.code-input {
+  grid-column: 2/3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 1rem;
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(72, 61, 61);
+  color: white;
+  caret-color: white;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  resize: none;
+  border: none;
+  outline: none;
+}
